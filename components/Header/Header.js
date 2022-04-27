@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <>
-      <header className='flex flex-row justify-between items-center p-[16px] h-[70px] border-b-[1px] border-[#d8d8d8] border-solid'>
+      <header className='flex flex-row justify-between items-center p-[16px] lg:px-[35px] lg:py-[16px] h-[70px] border-b-[1px] border-[#d8d8d8] border-solid'>
         <Logo />
         <MenuHamb handleMenu={handleMenu} />
       </header>
