@@ -7,6 +7,7 @@ const Close = () => {
       width='15'
       height='15'
       viewBox='0 0 15 15'
+      className='cursor-pointer'
     >
       <path
         fillRule='evenodd'

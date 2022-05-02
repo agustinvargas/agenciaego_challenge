@@ -8,6 +8,7 @@ export const MenuHamb = ({ handleMenu }) => {
       height='20'
       viewBox='0 0 28 20'
       onClick={handleMenu}
+      className='cursor-pointer'
     >
       <g fill='#191919'>
         <rect width='28' height='2.857' y='17.143' rx='1.429' />
