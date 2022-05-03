@@ -1,7 +1,15 @@
-import React from 'react';
-import { menuItems } from '../../utils/contents/menuItems';
+import React, { useEffect } from 'react';
 import Close from '../Icons/Close';
+import { useRouter } from 'next/router';
+
 const MenuOffcanvas = ({ handleMenu }) => {
+  const router = useRouter();
+
+  const handleNavigation = path => {
+    handleMenu();
+    router.push(path);
+  };
+
   return (
     <div
       id='menu-offcanvas'
@@ -15,9 +23,12 @@ const MenuOffcanvas = ({ handleMenu }) => {
           Cerrar
           <Close />
         </div>
-        <nav className='pt-[39px]'>
+        <nav className='pt-[39px] '>
           <ul className='flex flex-col items-end gap-[11px] px-[53px]'>
-            <li className='text-[20px] tracking-[-1px]'>Modelos</li>
+            <li className='text-[20px] tracking-[-1px] cursor-pointer'>
+              <a onClick={() => handleNavigation('/modelos')}>Modelos</a>
+              {/* For this challenge, we just added a link to the model page.  */}
+            </li>
             <li className='text-[20px] tracking-[-1px]'>Financiación</li>
             <li className='text-[20px] tracking-[-1px]'>Reviews y Comunidad</li>
           </ul>
