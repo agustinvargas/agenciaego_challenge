@@ -52,6 +52,7 @@ const ModelsGrid = ({ models, sort, filter }) => {
                 style: 'currency',
                 currency: 'ARS',
                 maximumFractionDigits: 0,
+                minimumFractionDigits: 0,
               })}
               {/* Parse number to local price format  */}
             </span>
