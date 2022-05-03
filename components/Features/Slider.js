@@ -16,7 +16,7 @@ const Slider = ({ model }) => {
       autoplay
       loop
       breakpoints={{
-        1020: {
+        768: {
           slidesPerView: 2.1,
         },
       }}
@@ -28,10 +28,10 @@ const Slider = ({ model }) => {
       {model?.model_features.map((feature, i) => (
         <SwiperSlide
           key={i}
-          className='min-w-[330px] lg:min-w-[300px] opacity-50'
+          className='min-w-[330px] md:min-w-[300px] opacity-50'
         >
-          <div className='max-w-[330px] lg:max-w-[300px] mx-auto'>
-            <div className='relative w-[330px] lg:w-[300px] lg:h-[147px] h-[181px] lg:w-[559px] lg:h-[146px]'>
+          <div className='max-w-[330px] md:max-w-[300px] mx-auto'>
+            <div className='relative w-[100%] md:h-[147px] h-[181px]'>
               <Image
                 src={feature.image}
                 alt={feature.name}
