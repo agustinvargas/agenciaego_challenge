@@ -5,8 +5,6 @@ import { useRouter } from 'next/router';
 const ModelsGrid = ({ models, sort, filter }) => {
   const router = useRouter();
 
-  console.log('filter en grid', filter);
-
   const handleNavigation = id => {
     router.push(`/modelos/${id}`);
   };
